@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Template 3</title>
+<style>
+  body { font-family: 'Trebuchet MS', sans-serif; margin: 0; display: flex; background: #eef2f3; color: #2b2b2b; }
+  
+  aside { width: 250px; background: #1c2833; color: white; height: 100vh; position: fixed; display: flex; flex-direction: column; align-items: center; padding-top: 3rem; }
+  aside h1 { font-size: 1.5rem; text-align: center; margin-bottom: 2rem; padding: 0 1rem; }
+  aside a { color: #d5d8dc; text-decoration: none; padding: 1rem; width: 100%; text-align: center; display: block; border-left: 4px solid transparent; transition: all 0.3s; box-sizing: border-box; }
+  aside a:hover { background: #2c3e50; border-left-color: #3498db; color: white; }
+  
+  main { margin-left: 250px; padding: 3rem 5%; width: calc(100% - 250px); box-sizing: border-box; }
+  .card { background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+  h2 { color: #1c2833; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+  
+  .about-img { border-radius: 50%; float: left; margin: 0 20px 20px 0; width: 120px; height: 120px; object-fit: cover; }
+  .projects-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+  .project-box { border: 1px solid #eaeaea; border-radius: 8px; overflow: hidden; transition: transform 0.2s; }
+  .project-box:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+  .project-box img { width: 100%; height: 180px; object-fit: cover; display: block; }
+  .project-text { padding: 1.5rem; }
+  .project-text h3 { margin: 0 0 0.5rem; }
+  
+  @media(max-width: 800px) {
+    body { flex-direction: column; }
+    aside { width: 100%; height: auto; position: static; padding: 1rem 0; flex-direction: row; justify-content: space-around; flex-wrap: wrap; }
+    aside a { width: auto; border-left: none; border-bottom: 4px solid transparent; }
+    aside a:hover { border-bottom-color: #3498db; }
+    main { margin-left: 0; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<aside>
+  <h1>[Your Name]</h1>
+  <a href="#about">About Me</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Highlighted Projects</a>
+  <a href="#contact">Contact me!</a>
+</aside>
+
+<main>
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <img src="files/profile.png" alt="Profile Picture" class="about-img">
+    <p>Hello! Welcome to my personal portfolio. My name is [Name], a [Year/Role] at [Institution/Company]. I love learning and finding new ways to innovate technology. My personal mission is to [Your Mission Statement].</p>
+    <div style="clear: both;"></div>
+    <br>
+    <a href="files/resume.pdf" target="_blank" style="color: #3498db; font-weight: bold; text-decoration: none;">Check out my resume for more information!</a>
+  </section>
+
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <p><strong>Coding Proficiencies:</strong> Skill 1, Skill 2, Skill 3, Skill 4</p>
+    <p><strong>Additional Skills:</strong> Skill 5, Skill 6, Skill 7</p>
+  </section>
+
+  <section id="projects">
+    <h2 style="margin-left: 1rem;">Highlighted Projects</h2>
+    <div class="projects-container">
+      
+      <div class="project-box card" style="margin-bottom: 0;">
+        <a href="#"><img src="files/project1.png" alt="Project 1"></a>
+        <div class="project-text">
+          <h3><a href="#">[Project Title 1]</a></h3>
+          <p>Brief description of what the project is, the problem it solves, and the steps taken.</p>
+        </div>
+      </div>
+
+      <div class="project-box card" style="margin-bottom: 0;">
+        <a href="#"><img src="files/project2.png" alt="Project 2"></a>
+        <div class="project-text">
+          <h3><a href="#">[Project Title 2]</a></h3>
+          <p>Brief description of what the project is, the problem it solves, and the steps taken.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact me!</h2>
+    <ul style="list-style: none; padding: 0; line-height: 2;">
+      <li><a href="https://linkedin.com" style="color: #1c2833; text-decoration: none;"><strong>LinkedIn:</strong> [Your LinkedIn Username]</a></li>
+      <li><a href="https://github.com" style="color: #1c2833; text-decoration: none;"><strong>Github:</strong> [Your Github Username]</a></li>
+      <li><a href="mailto:email@email.com" style="color: #1c2833; text-decoration: none;"><strong>Email:</strong> [Your Email]</a></li>
+    </ul>
+  </section>
+</main>
+
+</body>
+</html>

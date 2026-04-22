@@ -1,29 +1,177 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>CSCE 190: William Hoskins</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1 id="header">William Hoskins</h1>
-    <div class="about">
-      <h2>About me:</h2>
-      <p>Mission Statement Here</p>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Templates Directory</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  header p {
+    margin: 10px 0 0 0;
+    font-size: 1.1rem;
+    color: #bdc3c7;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+
+  .card-header {
+    background-color: #34495e;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #555;
+    flex-grow: 1;
+  }
+
+  .btn {
+    display: block;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #2980b9;
+  }
+
+  .instructions {
+    margin-top: 4rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+
+  .instructions h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Portfolio Templates</h1>
+  <p>Select a starting template to build your personal website.</p>
+</header>
+
+<main>
+  <div class="template-grid">
+    
+    <div class="card">
+      <div class="card-header">
+        <h2>Template 1</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Tabbed Interface.</strong> A clean, modern layout that acts like a single-page application. Users click buttons in the header to instantly switch between your About, Skills, and Project sections without reloading the page.</p>
+        <a href="template1/index.html" class="btn">View Template 1</a>
+      </div>
     </div>
-    <div class="skills left green attention">
-      <h2>Skills:</h2>
-      <p>No skills available</p>
-      <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-      </ul>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Template 2</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Continuous Scroll.</strong> A classic, vertical scrolling layout. All your information is displayed on one long page, and clicking the links in the sticky navigation bar smoothly scrolls the user down to the relevant section.</p>
+        <a href="template2/index.html" class="btn">View Template 2</a>
+      </div>
     </div>
-    <div class="projects">
-      <h2>Projects:</h2>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Template 3</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Sidebar Navigation.</strong> A sleek layout featuring a fixed navigation sidebar on the left and distinct, elevated content "cards" on the right. Automatically adapts to a top-navigation bar on mobile devices.</p>
+        <a href="template3/index.html" class="btn">View Template 3</a>
+      </div>
     </div>
-    <div class="contact">
-      <h2>Contact:</h2><p>hoskinsw@cec.sc.edu</p>
-    </div>
-    <!--This is a comment-->
-  </body>
+
+  </div>
+
+  <div class="instructions">
+    <h2>How to use these templates</h2>
+    <ol>
+      <li>Click on one of the templates above to see how it looks and functions.</li>
+      <li>Once you decide on the layout you like, navigate to that specific folder (<code>template1</code>, <code>template2</code>, or <code>template3</code>) in your project repository.</li>
+      <li>Open the <code>index.html</code> file for that template.</li>
+      <li>Replace the bracketed placeholder text (e.g., <code>[Your Name]</code>) with your actual information.</li>
+      <li>Upload your resume and project screenshots into the <code>files</code> folder to link them correctly.</li>
+    </ol>
+  </div>
+</main>
+
+</body>
 </html>
