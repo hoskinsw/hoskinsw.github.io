@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+
+    <h2>Results Page</h2>
+
+    <script>
+        // 1. Grab the URL's query string
+        const params = new URLSearchParams(window.location.search);
+
+        // 2. Extract the specific input by its 'name'
+        const userSearch = params.get("query");
+
+        // 3. Display it on the page
+        document.write("You searched for: " + userSearch);
+    </script>
+
+</body>
+</html>
