@@ -28,6 +28,9 @@ function withdraw() {
 function deposit() {
     if(bankBalance === 0)
     {
+        const statusText = document.getElementById("status-message");
+        statusText.innerText = "Choose an option";
+
         document.body.style.backgroundColor = "#008b8b";
         document.getElementById("withdraw").disabled = false;
         document.getElementById("withdraw").innerText = "Withdraw $25";
