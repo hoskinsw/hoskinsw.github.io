@@ -26,6 +26,13 @@ function withdraw() {
 }
 
 function deposit() {
+    if(bankBalance === 0)
+    {
+        document.body.style.backgroundColor = "#008b8b";
+        document.getElementById("withdraw").disabled = false;
+        document.getElementById("withdraw").innerText = "Withdraw $25";
+    }
+
     bankBalance = bankBalance + depositAmount;
 
     const balanceText = document.getElementById("balance-display")
