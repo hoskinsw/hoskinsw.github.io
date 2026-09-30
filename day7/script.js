@@ -3,11 +3,19 @@ const withdrawAmount = 25;
 const depositAmount = 25;
 
 function withdraw() {
+    bankBalance = bankBalance - withdrawAmount;
 
+    const balanceText = document.getElementById("balance-display")
+
+    balanceText.innerText = bankBalance
 }
 
 function deposit() {
-    
+    bankBalance = bankBalance + depositAmount;
+
+    const balanceText = document.getElementById("balance-display")
+
+    balanceText.innerText = bankBalance
 }
 
 // function takeDamage() {
