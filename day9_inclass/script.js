@@ -19,12 +19,10 @@ function displayItems() {
 
     // Add each item to the list
     checklistItems.forEach(function(item) {
-    const listItem = document.createElement("li");
-    listItem.textContent = item;
-    checklist.appendChild(listItem);
-});
-
-
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+        checklist.appendChild(listItem);
+    });
 }
 
 // Handle adding a new checklist item
