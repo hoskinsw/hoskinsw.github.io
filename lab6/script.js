@@ -1,4 +1,3 @@
-// 1. Establish the data (Using a JS Object to act as our database)
 const dashboardData = {
     dining: {
         title: "Campus Dining",
@@ -14,16 +13,12 @@ const dashboardData = {
     }
 };
 
-// 2. The function triggered by the sidebar buttons
 function changeContent(category) {
     
-    // Grab the target container in the HTML
     const contentBox = document.getElementById("dynamic-content");
     
-    // Extract the specific data based on the button clicked
     const selectedData = dashboardData[category];
     
-    // Inject the new HTML dynamically
     contentBox.innerHTML = `
         <h2>${selectedData.title}</h2>
         <p>${selectedData.text}</p>
